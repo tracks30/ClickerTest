@@ -1,16 +1,6 @@
 <html>
 	<head>
-<!-- Google Analytics -->
-<script>
-(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-})(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
 
-ga('create', 'UA-116920429-1', 'auto');
-ga('send', 'pageview');
-</script>
-<!-- End Google Analytics -->
 <!-- Global Site Tag (gtag.js) - Google Analytics -->
 <script async src="https://www.googletagmanager.com/gtag/js?id=UA-116920429-1"></script>
 <script>
@@ -23,11 +13,11 @@ ga('send', 'pageview');
 		<link rel="stylesheet" type="text/css" href="interface.css" />
 	</head>
 	<body>
-		<button onclick="cookieClick(1); ga('send', 'event', 'Button', 'Click', 'Click Me!')">Click Me!</button>
+		<button onclick="cookieClick(1); gtag('event', 'Button', 'Click', 'Click Me!')">Click Me!</button>
 		<br />
 		Cookies: <span id="cookies">0</span>
 		<br />
-		<button onclick="buyCursor(); ga('send', 'event', 'Button', 'Click', 'Buy Cursor')">Buy Cursor</button>
+		<button onclick="buyCursor(); gtag('event', 'Button', 'Click', 'Buy Cursor')">Buy Cursor</button>
 		<br />
 		Cursors: <span id="cursors">0</span>
 		<br />
