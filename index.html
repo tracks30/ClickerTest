@@ -13,11 +13,11 @@
 		<link rel="stylesheet" type="text/css" href="interface.css" />
 	</head>
 	<body>
-		<button onclick="cookieClick(1); gtag('event', 'Button', 'Click', 'Click Me!')">Click Me!</button>
+		<button onclick="cookieClick(1); gtag('event', 'Button', {event_category: 'Click', event_action: 'Click Me!'});">Click Me!</button>
 		<br />
 		Cookies: <span id="cookies">0</span>
 		<br />
-		<button onclick="buyCursor(); gtag('event', 'Button', 'Click', 'Buy Cursor')">Buy Cursor</button>
+		<button onclick="buyCursor(); gtag('event', 'Button', {event_category: 'Click', event_action: 'Buy Cursor'});">Buy Cursor</button>
 		<br />
 		Cursors: <span id="cursors">0</span>
 		<br />
