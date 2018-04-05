@@ -3,7 +3,7 @@ var cookies = 0;
 function cookieClick(number){
     cookies = cookies + number;
     document.getElementById("cookies").innerHTML = cookies;
-	ga('send', 'event', 'Button', 'Click', 'Click Me1!');
+	ga('send', 'event', 'Button', 'Click', 'Click Me!');
 };
 
 var cursors = 0;
